@@ -12,37 +12,33 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/homepage', function () {
-    return view('fashion.index');
+    return view('pages.home');
 });
 
 Route::get('/account', function () {
-    return view('fashion.account');
+    return view('pages.account');
 });
 
 Route::get('/cart', function () {
-    return view('fashion.cart');
+    return view('pages.cart');
 });
 
 Route::get('/collection', function () {
-    return view('fashion.collection');
+    return view('pages.collection');
 });
 
 Route::get('/contact-us', function () {
-    return view('fashion.contact-us');
+    return view('pages.contact-us');
 });
 
-Route::get('/detail', function () {
-    return view('fashion.detail');
+Route::get('/detail', function () pages
+    return view('pages.detail');
 });
 
 Route::get('/register', function () {
-    return view('fashion.register');
+    return view('pages.register');
 });
 
 Route::get('/wishlist', function () {
-    return view('fashion.wishlist');
+    return view('pages.wishlist');
 });

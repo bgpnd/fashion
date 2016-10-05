@@ -2,15 +2,7 @@
 <html>
 <head>
     <title>Fashion</title>
-    <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/bootstrap/css/bootstrap-theme.css" rel="stylesheet">
-    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet/less" type="text/css" href="assets/css/main.css">
-    <link rel="stylesheet/less" type="text/css" href="assets/css/animate.css">
-    <link rel="stylesheet/less" type="text/css" href="assets/css/camera.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/cs.style.css">
-    <link rel="stylesheet/less" type="text/css" href="assets/less/main.less">
-    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    
 </head> 
 <body>
     @include('includes.header')
