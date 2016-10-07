@@ -52,7 +52,7 @@
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav top-menu">
                             <li>
-                                <a href="/homepage">Home</a>
+                                <a href="/">Home</a>
                             </li>
                             <li class="dropdown">
                                 <a href="/collection" class="dropdown-toggle dropdown-link" data-hover="dropdown">Shop
