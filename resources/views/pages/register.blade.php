@@ -1,3 +1,8 @@
+@extends('layouts.default')
+@section('title')
+Register
+@stop
+@section('content')
 <div class="container">
     <div class="row">
         <ol class="breadcrumb">
@@ -23,3 +28,4 @@
         </div>
     </div>
 </div> 
+@stop

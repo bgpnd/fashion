@@ -1,10 +1,10 @@
 <!doctype html>
 <html>
+<title>@yield('title') - Fashion</title>
 <head>
     @include('includes.head')
 </head>
 <body>
-<div class="container">
 
     <header class="row">
         @include('includes.header')
@@ -12,7 +12,7 @@
 
     <div id="main" class="row">
 
-            @yield('content')
+        @yield('content')
 
     </div>
 
@@ -20,6 +20,6 @@
         @include('includes.footer')
     </footer>
 
-</div>
+    @include('includes.foot')
 </body>
 </html>

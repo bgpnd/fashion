@@ -31,7 +31,7 @@ Route::get('/contact-us', function () {
     return view('pages.contact-us');
 });
 
-Route::get('/detail', function () pages
+Route::get('/detail', function () {
     return view('pages.detail');
 });
 

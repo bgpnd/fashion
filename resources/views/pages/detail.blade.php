@@ -1,4 +1,8 @@
-
+@extends('layouts.default')
+@section('title')
+Detail
+@stop
+@section('content')
 <div class="container">
     <div class="row">
         <ol class="breadcrumb">
@@ -205,3 +209,78 @@
     </div>
 </div>
 </div>  
+@stop
+@push('scripts')
+<script type="text/javascript">
+        // Once the video is ready
+        $("#content_video").ready(function () {
+
+            var myPlayer = $(this);
+            var aspectRatio = 9 / 16;
+
+            function resizeVideoJS() {
+                var width = document.getElementById("content_video").parentElement.offsetWidth;
+                myPlayer.width(width).height(width * aspectRatio);
+            }
+
+            resizeVideoJS();
+            window.onresize = resizeVideoJS;
+        });
+        $(document).ready(function () {
+                                            //owl carousel harus di dalam document ready atau $(function() karena html harus terload sempurna dulu
+                                            //karena ada lebih dari satu carousel dengan prev next custom, lebih aman pakai acuan id
+                                            owlPick = $('#slide-pick').owlCarousel({
+                                                margin: 10,
+                                                items: 3,
+                                                responsive: {//responsive: semakin kecil width semakin sedikit items
+                                                    480: {
+                                                        items: 1
+                                                    },
+                                                    768: {
+                                                        items: 2
+                                                    },
+                                                    1024: {
+                                                        items: 3
+                                                    }
+                                                },
+                                            });
+
+                                            // Custom Navigation Events
+                                            $("#slide-pick-next").click(function () {
+                                                owlPick.trigger('owl.next');
+                                            });
+
+                                            $("#slide-pick-prev").click(function () {
+                                                owlPick.trigger('owl.prev');
+                                            });
+
+
+                                            owlFeatured = $('#slide-featured').owlCarousel({
+                                                margin: 10,
+                                                items: 3,
+                                                responsive: {
+                                                    480: {
+                                                        items: 1
+                                                    },
+                                                    768: {
+                                                        items: 2
+                                                    },
+                                                    1024: {
+                                                        items: 3
+                                                    }
+                                                },
+                                            });
+
+                                            // Custom Navigation Events
+                                            $("#slide-featured-next").click(function () {
+                                                owlFeatured.trigger('owl.next');
+                                            });
+
+                                            $("#slide-featured-prev").click(function () {
+                                                owlFeatured.trigger('owl.prev');
+                                            });
+                                            $("a[rel^='prettyPhoto']").prettyPhoto();
+                                        });
+                                    </script>
+                                    @endpush
+

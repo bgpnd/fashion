@@ -1,4 +1,8 @@
-
+@extends('layouts.default')
+@section('title')
+Collection
+@stop
+@section('content')
 <div class="container">
     <div class="row">
         <ol class="breadcrumb">
@@ -210,3 +214,4 @@
         </div>
     </div>
 </div> 
+@stop

@@ -23,7 +23,7 @@
                                     <li><input class="form-control" type="email" name=""></li>
                                     <li class="pass">Password *</li>
                                     <li><input class="form-control" type="password" name=""></li>
-                                    <li><button class="btn btn-default">LOGIN</button><span> or <a href="#">Create an account</a></span></li>
+                                    <li><button class="btn btn-default">LOGIN</button><span> or <a href="/register">Create an account</a></span></li>
                                 </div>
                             </ul>
                         </li>
